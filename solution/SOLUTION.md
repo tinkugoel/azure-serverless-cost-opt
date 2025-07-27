@@ -69,6 +69,8 @@ function bulkDeleteOlderThan(cutoffDate) {
    
    b. Web Activity: Use ADF Web Activity to invoke the stored procedure, passing the cutoff date as a parameter only on validation success.
 
+For regular archival we will schedule this pipeline for a periodic frequency needed as per operational requirements to archive records on regular basis be it daily, weekly.
+
 # For records retrieval from Azure Cosmos DB and Azure BLOB Storage(in case of older >= 3 months)
 
 API Contracts with client remains same and no changes needs to be informed to clients/end users, however, we need to implement a fallback logic in our backend for that GET API call.
